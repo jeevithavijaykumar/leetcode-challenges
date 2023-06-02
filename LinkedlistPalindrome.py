@@ -26,3 +26,5 @@ class Linkedlistpalindrome():
     
 l = Linkedlistpalindrome()
 print(l.palindrome())
+
+# Here is approach 2
