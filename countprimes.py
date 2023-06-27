@@ -4,13 +4,13 @@
 class countPrimes():
     def countprimenum(self,n):
         res=[1]*n
-        res[0]=0
-        res[1]=0
 
-        for i in range(2,int(n**0.5)+1):
+        for i in range(0,n):
+            if(i<=1):
+                res[i]=0
             if(res[i]):
                 for j in range(i*i,n,i):
                     res[j]=0
-        return sum(res)
+        return(sum(res))
 c=countPrimes()
 print(c.countprimenum(15))
