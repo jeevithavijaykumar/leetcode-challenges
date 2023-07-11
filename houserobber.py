@@ -3,10 +3,12 @@
 # the only constraint stopping you from robbing each of them is that adjacent houses have security systems connected and
 # it will automatically contact the police if two adjacent houses were broken into on the same night.
 
+#[rob1,rob2,n,n+1...]
+
 class Houserobber():
     def robber(self,nums):
         rob1=0
-        rob2=0
+        rob2=0  #[rob1,rob2,n,n+1...]
         for n in nums:
             temp=max(rob1+n,rob2)
             rob1=rob2
