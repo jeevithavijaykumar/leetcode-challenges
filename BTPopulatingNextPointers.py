@@ -14,7 +14,6 @@ class BinaryTree():
     def connect(self,root):
         cur=root
         nxt=root.left if root else None
-
         while(cur and nxt):
             cur.left.next = cur.right
             if(cur.next):
