@@ -1,4 +1,4 @@
-#4. Median of Two Sorted Arrays
+#Median of Two Sorted Arrays
 #Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.
 #The overall run time complexity should be O(log (m+n)).
 
@@ -8,12 +8,12 @@ class Array():
         B = nums2
         total = len(A)+len(B)
         half = total//2
+
         if(len(A)>len(B)):
             A,B = B,A
 
         l=0
         r=len(A)-1
-
         while True:
             i = (l+r)//2
             j = half-i-2
@@ -23,8 +23,10 @@ class Array():
             Bright = B[j+1] if j+1 < len(B) else float('-infinity')
 
             if(Aleft <= Bright and Bleft <= Aright):
+                # for odd length merged array
                 if(total%2):
                     return(min(Aright,Bright))
+                # for even length merged array
                 else:
                     return(max(Aleft,Bleft)+min(Aright,Bright))/2
             elif(Aleft>Bright):
