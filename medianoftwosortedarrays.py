@@ -20,7 +20,7 @@ class Array():
             Aleft = A[i] if i>=0 else float('-infinity')
             Aright = A[i+1] if i+1 < len(A) else float('infinity')
             Bleft = B[j] if j>=0 else float('-infinity')
-            Bright = B[j+1] if j+1 < len(B) else float('-infinity')
+            Bright = B[j+1] if j+1 < len(B) else float('infinity')
 
             if(Aleft <= Bright and Bleft <= Aright):
                 # for odd length merged array
@@ -35,4 +35,4 @@ class Array():
                 l=i+1
 
 a =Array()
-print(a.medianofsortedarray([1,2],[3,4]))
+print(a.medianofsortedarray([100001],[100000]))
