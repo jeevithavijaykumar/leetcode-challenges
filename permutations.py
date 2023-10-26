@@ -21,5 +21,3 @@ class Permutations():
 p=Permutations()
 print(p.permute([1,2,3]))
 
-
-
