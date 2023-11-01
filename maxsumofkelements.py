@@ -13,5 +13,6 @@ class Array():
             maxsum = max(maxsum,cur_sum)
 
         return(maxsum)
+    
 a=Array()
 print(a.maxsumofk([1,4,2,10,2,3,1,0,20],4))
