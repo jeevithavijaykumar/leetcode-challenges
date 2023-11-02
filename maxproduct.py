@@ -19,3 +19,4 @@ class Subarray():
 
 m = Subarray()
 print(m.maxproduct([2,-3,2,-4,-5]))
+print(m.maxproduct([-2,0,-1]))
