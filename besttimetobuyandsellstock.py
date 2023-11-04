@@ -8,7 +8,6 @@ class Buysellstock():
         l=0
         r=1
         maxprofit=0
-
         while(r<len(prices)):
             if(prices[l]<prices[r]):
                 profit=prices[r]-prices[l]
