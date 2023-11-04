@@ -5,16 +5,19 @@
 
 class BesttimetoBuy():
     def isbesttime(self,prices):
-        max_profit =0
-        l=0
-        r=1
+
+        if (not prices or len(prices) == 1):
+            return (0)
+
+        profit = 0
+        l = 0
+        r = 1
         while (r < len(prices)):
             if (prices[l] < prices[r]):
-                max_profit = max_profit + prices[r] - prices[l]
+                profit = profit + prices[r] - prices[l]
             l = r
             r = r + 1
-        return (max_profit)
+        return (profit)
+    
 b=BesttimetoBuy()
 print(b.isbesttime([7,1,5,3,6,4]))
-
-
