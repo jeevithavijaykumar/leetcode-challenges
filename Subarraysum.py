@@ -7,11 +7,12 @@ class Subarray():
         cursum=0
         count=0
 
-        for i in range(0,len(nums)):
-            cursum=cursum+nums[i]
+        for num in nums:
+            cursum=cursum+num
             count=count+prefixsum.get(cursum-k,0)
             prefixsum[cursum]=1+prefixsum.get(cursum,0)
+
         return(count)
-    
+
 s=Subarray()
 print(s.subarraysum([1,1,1],2))
