@@ -18,8 +18,10 @@ class Generrateparentheses():
                 stack.append(')')
                 backstrap(openn,closedn+1)
                 stack.pop()
+
         backstrap(0,0)
         return(res)
+    
 g=Generrateparentheses()
 print(g.parenthesesgenerator(3))
 
