@@ -1,6 +1,6 @@
 #572. Subtree of Another Tree
 #Given the roots of two binary trees root and subRoot,
-# return true if there is a subtree of root with the same structure and node values of subRoot and false otherwise.
+#Return true if there is a subtree of root with the same structure and node values of subRoot and false otherwise.
 
 class TreeNode():
     def __init(self,data):
@@ -10,18 +10,21 @@ class TreeNode():
 
 class Subtree():
     def issubtree(self,root,subroot):
-        if( not subroot):
+        if(not subroot):
             return(True)
-        if not root:
+        elif(not root):
             return(False)
         if self.helpertree(root,subroot):
             return(True)
-        return(self.helpertree(root.left,subroot) or self.helpertree(root.right,subroot))
+        return(self.issubtree(root.left,subroot) or self.issubtree(root.right,subroot))
 
     def helpertree(self,r,s):
-        if not r and not s:
+        if(not r and not s):
             return(True)
-        if(r and s and r.val==s.val):
-            return(self.helpertree(r.left,s.left) and self.helpertree(r.right,s.right))
-        return(False)
+        elif(not r or not s):
+            return(False)
+        if(r.val!=s.val):
+            return(False)
+        return(self.helpertree(r.left,s.left) and self.helpertree(r.right,s.right))
+
 
