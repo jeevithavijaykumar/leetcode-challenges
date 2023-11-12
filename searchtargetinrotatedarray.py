@@ -1,7 +1,7 @@
 #33. Search in Rotated Sorted Array
 #There is an integer array nums sorted in ascending order (with distinct values).
 #Given the array nums after the possible rotation and an integer target,
-# return the index of target if it is in nums, or -1 if it is not in nums.
+#Return the index of target if it is in nums, or -1 if it is not in nums.
 
 class Targetposition():
     def targetinrotatedarray(self,nums,target):
@@ -23,7 +23,7 @@ class Targetposition():
                 else:
                     l=mid+1
         return(-1)
-    
+
 t=Targetposition()
 print(t.targetinrotatedarray([4,5,6,7,0,1,2],6))
 
