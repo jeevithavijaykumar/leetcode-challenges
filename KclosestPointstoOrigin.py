@@ -23,3 +23,19 @@ class List:
 l = List()
 print(l.kClosest([[3, 3], [5, -1], [-2, 4]], 2))
 
+#Sorting
+class List:
+    def kClosest(self, points, k):
+        arr = []
+        for x, y in points:
+            dist = math.sqrt((x) ** 2 + (y) ** 2)
+            arr.append([dist, x, y])
+
+        arr.sort()
+        res = []
+        for i in range(0, k):
+            res.append([arr[i][1], arr[i][2]])
+        return (res)
+
+l = List()
+print(l.kClosest([[3, 3], [5, -1], [-2, 4]], 2))
