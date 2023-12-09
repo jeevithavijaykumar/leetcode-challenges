@@ -18,5 +18,4 @@ class Graph():
             for nei in node.neighbors:
                 copy.neighbors.append((nei))
             return(copy)
-
         return(dfs(node)) if node else None
