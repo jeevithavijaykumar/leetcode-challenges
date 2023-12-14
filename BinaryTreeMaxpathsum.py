@@ -25,6 +25,7 @@ class BinaryTreeMaxpathsum():
         maxsumpathBT(root)
         return(self.max_sum)
 
+
 root= TreeNode(1)
 root.left = TreeNode(2)
 root.right=TreeNode(-1)
