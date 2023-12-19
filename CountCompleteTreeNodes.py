@@ -1,4 +1,5 @@
-#Given the root of a complete binary tree, return the number of the nodes in the tree.
+#222. Count Complete Tree Nodes.
+# Given the root of a complete binary tree, return the number of the nodes in the tree.
 
 class TreeNode():
     def __init__(self,val):
