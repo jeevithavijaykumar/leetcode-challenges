@@ -29,8 +29,25 @@ class Solution():
 
         return dummy.next
 
+def list_to_linkedlist(lst):
+    dummy = ListNode(0)
+    curr = dummy
 
+    for val in lst:
+        curr.next = ListNode(val)
+        curr = curr.next
+    return dummy.next
+
+def linkedlist_to_list(node):
+    res = []
+    while (node):
+        res.append(node.val)
+        node = node.next
+    return res
 
 s = Solution()
-print(s.addTwoNumbers([2,4,3], [5,6,4]))
+l1 = list_to_linkedlist([2,4,3])
+l2 = list_to_linkedlist([5,6,4])
+result = s.addTwoNumbers(l1,l2)
+print(linkedlist_to_list(result))
 
