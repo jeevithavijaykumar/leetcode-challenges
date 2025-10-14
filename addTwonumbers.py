@@ -4,9 +4,9 @@
 
 
 class ListNode():
-    def __init(self, val=0, next =None):
+    def __init__(self, val=0, next =None):
         self.val = val
-        self.next = None
+        self.next = next
 
 class Solution():
     def addTwoNumbers(self, l1, l2):
@@ -29,6 +29,8 @@ class Solution():
 
         return dummy.next
 
-s = Solution()
 
+
+s = Solution()
+print(s.addTwoNumbers([2,4,3], [5,6,4]))
 
