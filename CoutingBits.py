@@ -9,6 +9,7 @@ class Solution:
 
         return res
 
+
 s= Solution()
 print(s.countBits(5))
 
