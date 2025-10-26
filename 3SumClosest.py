@@ -19,5 +19,6 @@ class Solution():
                     r=r-1
         return(res)
 
+
 s=Solution()
 print(s.threesumclosest([-1,2,1,-4],1))
