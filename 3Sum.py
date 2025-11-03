@@ -31,8 +31,7 @@ class Solution:
                 h = h-1
                 while(l<h and nums[l] == nums[l-1]):
                     l = l+1
-                while (l < h and nums[h] == nums[h -1]):
-                    h = h - 1
+
 
 s = Solution()
 print(s.threesum([-1,0,1,2,-1,-4]))
