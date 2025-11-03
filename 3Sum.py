@@ -14,7 +14,6 @@ class Solution:
                 break
             if i ==0 or nums[i] != nums[i-1]:
                 self.threeSumZero(nums, i, res)
-
         return res
 
     def threeSumZero(self, nums, i, res):
