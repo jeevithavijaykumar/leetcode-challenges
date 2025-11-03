@@ -38,4 +38,3 @@ s = Solution()
 print(s.threesum([-1,0,1,2,-1,-4]))
 print(s.threesum([0,1,1]))
 print(s.threesum([0,0,0]))
-
