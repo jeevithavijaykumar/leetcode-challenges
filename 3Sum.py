@@ -5,7 +5,6 @@
 
 class Solution:
     def threesum(self, nums):
-
         nums.sort()
         res=[]
 
