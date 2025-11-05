@@ -12,3 +12,5 @@ class Solution:
             else:
                 duplicate_list.remove(num)
         return duplicate_list.pop()
+
+s = Solution()
