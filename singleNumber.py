@@ -15,3 +15,4 @@ class Solution:
 
 s = Solution()
 print(s.singleNumber([4,1,2,1,2]))
+print(s.singleNumber([2,2,1]))
