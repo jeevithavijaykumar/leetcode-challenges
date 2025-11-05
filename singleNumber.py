@@ -14,3 +14,4 @@ class Solution:
         return duplicate_list.pop()
 
 s = Solution()
+print(s.singleNumber([4,1,2,1,2]))
