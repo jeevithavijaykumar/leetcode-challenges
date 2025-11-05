@@ -11,5 +11,4 @@ class Solution:
                 duplicate_list.append(num)
             else:
                 duplicate_list.remove(num)
-
         return duplicate_list.pop()
